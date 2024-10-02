@@ -1,4 +1,7 @@
-[中文](./README_zh.md)
+# ComfyUI_DiffHarmony: ComfyUI implementation of DiffHarmony
+
+Original README below
+
 
 # DiffHarmony: Latent Diffusion Model Meets Image Harmonization
 
