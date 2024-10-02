@@ -2,6 +2,8 @@
 
 Original README below
 
+---
+
 
 # DiffHarmony: Latent Diffusion Model Meets Image Harmonization
 
