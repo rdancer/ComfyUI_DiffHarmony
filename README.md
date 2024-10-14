@@ -1,5 +1,70 @@
 # ComfyUI_DiffHarmony: ComfyUI implementation of DiffHarmony
 
+
+## Installation
+
+Note: We assume that you need to create a Docker container, so we do *not* download the model weights at runtime.
+
+1. Install this repo as a custom node in ComfyUI.
+2. Manually download weights from [Google Drive](https://drive.google.com/file/d/1rezNdcuZbwejbC9rH9S1SUuaWTGTz_wG/view?usp=drive_link) and save them in the `checkpoints` subdirectory -- your file tree should look like this:
+```
+.../ComfyUI/custom_nodes/ComfyUI_DiffHarmony/checkpoints
+├── base
+│   ├── feature_extractor
+│   │   └── preprocessor_config.json
+│   ├── model_index.json
+│   ├── safety_checker
+│   │   ├── config.json
+│   │   └── pytorch_model.bin
+│   ├── scheduler
+│   │   └── scheduler_config.json
+│   ├── text_encoder
+│   │   ├── config.json
+│   │   └── pytorch_model.bin
+│   ├── tokenizer
+│   │   ├── merges.txt
+│   │   ├── special_tokens_map.json
+│   │   ├── tokenizer_config.json
+│   │   └── vocab.json
+│   ├── unet
+│   │   ├── config.json
+│   │   └── diffusion_pytorch_model.bin
+│   └── vae
+│       ├── config.json
+│       └── diffusion_pytorch_model.bin
+├── condition_vae
+│   ├── config.json
+│   └── diffusion_pytorch_model.safetensors
+├── inverse
+│   ├── feature_extractor
+│   │   └── preprocessor_config.json
+│   ├── model_index.json
+│   ├── safety_checker
+│   │   ├── config.json
+│   │   └── pytorch_model.bin
+│   ├── scheduler
+│   │   └── scheduler_config.json
+│   ├── text_encoder
+│   │   ├── config.json
+│   │   └── pytorch_model.bin
+│   ├── tokenizer
+│   │   ├── merges.txt
+│   │   ├── special_tokens_map.json
+│   │   ├── tokenizer_config.json
+│   │   └── vocab.json
+│   ├── vae
+│   │   ├── config.json
+│   │   └── diffusion_pytorch_model.bin
+│   └── weights-102800
+│       ├── config.json
+│       └── diffusion_pytorch_model.safetensors
+└── refinement
+    ├── config.json
+    └── diffusion_pytorch_model.safetensors
+```
+3. ...
+4. Profit
+
 Original README below
 
 ---
