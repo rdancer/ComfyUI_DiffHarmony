@@ -1,3 +1,7 @@
+This is work in progress -- for now development has been paused.
+
+See also: https://github.com/nicecv/DiffHarmony/issues/2
+
 # ComfyUI_DiffHarmony: ComfyUI implementation of DiffHarmony
 
 
